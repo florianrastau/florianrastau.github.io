@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Duct Liner System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+	
+	<style>
+		div.a {
+		 text-indent: 5%;
+		}
+
+	</style>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header"></header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Main Page</a></li>
+						</ul>
+
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/florianrastau/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+							<li><a href="https://github.com/florianrastau" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+					
+
+
+<!-- Main -->
+<div id="main">
+
+	<!-- Featured Post -->
+
+	<article>
+		<p>
+			The Duct Liner System is part of a manufacturing line that produces rectangular duct sections 
+			from metal coils. In the sheet metal fabrication sector, this is called a Full Coil Line and
+			 it is the workhorse of the industry. 
+			 My project, The Duct Liner System, has three main functions:
+		
+				<div class="a"> 1. Uncoil and shear the duct liner, <br /></div>
+				<div class="a">	2. Apply glue to the metal sheet, <br /></div>
+				<div class="a">	3. Locate and pin the liner to the metal sheet. <br /></div>
+		
+			<a href="#" class="image  fit"> <img src="images/CoilLine.jpg" alt="" /></a> 
+		</p>
+		
+		<p>
+			The uncoil, shear and gluing portions are relatively easy (rewiring, updating pneumatic actuators etc.).
+			 However, the challenge comes with the old Gripnail pinning machine. 
+			 This will need to be replaced with a weld pinning type machine that 
+			 has manual controls and a different footprint. 
+			 I will be using an Allen Bradley Micro 850 plc to account for 
+			 the new inputs/outputs associated with the weld pinning machine. 
+			 A new sequence of operations will be written to integrate the dwelling/welding times 
+			 for the machine, new safety protocols due to the welders etc., and much more. 
+			
+			<a href="#" class="image fit"><img src="images/gripnailVSweld.jpg" alt="" /></a> 
+		</p>
+	</article>
+
+	<!-- Posts -->
+		<section class="posts">
+			
+			<article>
+				<p>The Gripnail Machine that will need to be removed. The replacement has a bigger footprint. </p>
+				<a href="#" class="image fit"><img src="images/gripnail.jpg" alt="" /></a>
+			</article>
+
+			<article>
+				<p>The manual controls of the welding pinning machine that will be replaced by the new plc. </p>
+				<a href="#" class="image fit"><img src="images/OldControls.jpg" alt="" /></a>
+			</article>
+			
+			<article>
+				<p> The Micro 850 plc will integrate the controls for all 3 stations. </p>
+				<a href="#" class="image fit"><img src="images/ccw2.jpg" alt="" /></a>
+			</article>
+
+			<article>
+				<p>Using CCW to create a function block used to calculate the pin locations.</p>
+				<a href="#" class="image fit"><img src="images/ccw1.jpg" alt="" /></a>
+			</article>
+		
+		</section>
+
+
+		<article>
+			<p> At this point, I have the sequence of operation done and I am writing the new 
+				ladder logic program that will integrate the operation for all the stations. 
+				The operator will have full control (auto mode or hand mode) thru an HMI.
+				<br>  
+				<br>
+				The next step will be to build the control panel and re-wiring the whole system.
+			</p>
+		</article>
+
+
+		<ul class="actions special">
+			<li><a href="#" class="button">Go Up</a></li> <li><a href="index.html" class="button">Main Page</a></li>
+		</ul>
+		
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+		<section>
+			<h3>Social</h3>
+			<ul class="icons alt">
+				<li><a href="https://www.linkedin.com/in/florianrastau/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+				<li><a href="https://github.com/florianrastau" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</section>
+</footer>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
